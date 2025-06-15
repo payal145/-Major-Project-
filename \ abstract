@@ -1,0 +1,60 @@
+Abstract
+ The rapid expansion of digital news platforms over recent years has re
+sulted in an unprecedented surge in the volume and variety of information
+ available online. Every minute, thousands of news articles, reports, and
+ updates are published across diverse domains such as government affairs,
+ healthcare, education, crime, business, and more. While this abundance of
+ information can be valuable, it also poses a significant challenge: manually
+ monitoring and analyzing this continuous flow of real-time news is not only
+ time-consuming but also highly prone to human error. For government
+ departments, corporate entities, media analysts, and other stakeholders,
+ keeping track of relevant news stories and extracting actionable insights
+ has become increasingly difficult.
+ To address this critical need, the project introduces an AI-powered News
+ Monitoring System designed to automate and streamline the process of
+ collecting, classifying, and analyzing online news articles in real-time. The
+ primary objective of the system is to classify incoming news content into
+ relevant government or organizational departments such as Education,
+ Health, Crime, Finance, Environment, and others. This categorization
+ allows decision-makers to focus specifically on information that impacts
+ their domain, thereby improving efficiency and situational awareness.
+ In addition to classification, the system performs sentiment analysis on news
+ articles to gauge the public’s mood or perception towards specific events
+ or departments. By categorizing sentiments into Positive, Neutral, and
+ Negative classes, the system provides a nuanced understanding of public
+ opinion, enabling organizations to respond proactively to shifts in sentiment,
+ especially when negative or critical news arises.
+ The technological foundation of the system leverages state-of-the-art Natu
+v
+ral Language Processing (NLP) techniques and machine learning models
+ to achieve high accuracy and robustness. Among these techniques, Dis
+tilBERT—a lightweight and efficient variant of the BERT transformer
+ model—is utilized for capturing deep semantic relationships within text
+ data, even across multiple languages. This makes the system highly effective
+ for processing multilingual news sources. Complementing this, traditional
+ methods like TF-IDF (Term Frequency-Inverse Document Frequency) are
+ employed for feature extraction, and Logistic Regression serves as a reliable
+ classifier, ensuring a balance between computational efficiency and predic
+tion performance.
+ An essential component of the solution is its comprehensive web scraping
+ pipeline. This module continuously gathers news articles from a wide range
+ of online sources including news portals, blogs, government websites, and
+ social media platforms. The scraping mechanism supports multiple lan
+guages, enabling real-time ingestion and processing of diverse news content
+ from across the globe.
+ One of the project’s key innovations is the Sentiment-Based Alerting Mech
+anism. This feature is designed to flag news articles with negative or critical
+ sentiments that pertain to specific departments. When such articles are
+ detected, the system automatically generates alerts for relevant stakeholders.
+ This functionality is crucial for early identification of potential crises or
+ reputational risks, allowing timely interventions and decision-making.
+ The backend infrastructure is developed using Python and the Django web
+ framework, providing a scalable and secure environment to host the appli
+cation and manage data workflows. Machine learning models are trained
+ on curated multilingual datasets, ensuring the system’s adaptability and
+ effectiveness in handling diverse news formats and languages.
+ Overall, the AI-powered News Monitoring System empowers government
+ agencies, corporations, and media analysts to maintain continuous situa
+tional awareness by automating the otherwise tedious task of news moni
+toring. It facilitates department-wise media reputation tracking, enables
+ efficient sentiment evaluation, and supports proactive crisis management
